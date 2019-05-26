@@ -43,6 +43,7 @@ body {
       color: #6b0419; }
       .header > div > nav > ul {
         display: flex;
+        align-items: center;
         height: 100%;
         list-style: none;
         font-size: 1.6rem;
@@ -50,9 +51,25 @@ body {
         line-height: 2.1rem; }
         .header > div > nav > ul > li {
           display: flex;
-          align-items: center;
-          padding: 0 2rem;
-          cursor: pointer; }
-          .header > div > nav > ul > li:hover {
-            background-color: rgba(107, 4, 25, 0.1);
-            border-bottom: 2px solid #6b0419; }
+          margin-left: 3.5rem; }
+          .header > div > nav > ul > li > a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #063140;
+            position: relative;
+            padding: 0.2rem 0.4rem; }
+            .header > div > nav > ul > li > a:hover {
+              color: #6b0419; }
+            .header > div > nav > ul > li > a::before {
+              content: '';
+              display: block;
+              height: 2px;
+              background: #6b0419;
+              position: absolute;
+              top: 3rem;
+              left: 0;
+              right: 0;
+              transform: scale(0, 1);
+              transition: transform ease-in-out 250ms; }
+            .header > div > nav > ul > li > a:hover::before {
+              transform: scale(1, 1); }
