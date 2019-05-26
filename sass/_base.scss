@@ -1,0 +1,31 @@
+$color-first: #6b0419;
+$color-grey: #383838;
+$color-nav: #063140;
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+  display: grid;
+  // grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  /* prettier-ignore */
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
+  grid-template-rows: 8rem;
+  grid-gap: 1.2rem;
+}
