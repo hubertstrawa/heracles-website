@@ -107,9 +107,9 @@ body {
       height: 18.5rem; }
       @media only screen and (max-width: 50em) {
         .showcase__box > div {
-          width: 78%;
+          width: 77%;
           margin: 0 auto;
-          height: 28rem; } }
+          height: 25rem; } }
     .showcase__box--header {
       font-size: 3.2rem;
       line-height: 4.2rem; }
