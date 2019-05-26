@@ -1,5 +1,5 @@
 .header {
-  grid-column: full-start / full-end;
+  grid-column: 1 / -1;
   display: grid;
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
@@ -24,6 +24,10 @@
       align-items: center;
       color: $color-first;
 
+      @media only screen and (max-width: 660px) {
+        display: none;
+      }
+
       & > ul {
         display: flex;
         align-items: center;
@@ -32,6 +36,7 @@
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 2.1rem;
+        text-align: center;
 
         & > li {
           display: flex;

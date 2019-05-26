@@ -17,11 +17,20 @@ body {
   display: grid;
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: 8rem;
+  grid-template-rows: 8rem 50.8rem;
   grid-gap: 1.2rem; }
 
+.btn {
+  display: inline-block;
+  background-color: #6a0a1e;
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 2px; }
+
 .header {
-  grid-column: full-start / full-end;
+  grid-column: 1 / -1;
   display: grid;
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
@@ -41,6 +50,9 @@ body {
       justify-content: flex-end;
       align-items: center;
       color: #6b0419; }
+      @media only screen and (max-width: 660px) {
+        .header > div > nav {
+          display: none; } }
       .header > div > nav > ul {
         display: flex;
         align-items: center;
@@ -48,7 +60,8 @@ body {
         list-style: none;
         font-size: 1.6rem;
         font-weight: 500;
-        line-height: 2.1rem; }
+        line-height: 2.1rem;
+        text-align: center; }
         .header > div > nav > ul > li {
           display: flex;
           margin-left: 3.5rem; }
@@ -73,3 +86,42 @@ body {
               transition: transform ease-in-out 250ms; }
             .header > div > nav > ul > li > a:hover::before {
               transform: scale(1, 1); }
+
+.showcase {
+  grid-column: 1 / -1;
+  display: grid;
+  /* prettier-ignore */
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
+  grid-gap: 1.2rem; }
+  .showcase__box {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #063140; }
+    .showcase__box > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 60%;
+      height: 18.5rem; }
+      @media only screen and (max-width: 50em) {
+        .showcase__box > div {
+          width: 78%;
+          margin: 0 auto;
+          height: 28rem; } }
+    .showcase__box--header {
+      font-size: 3.2rem;
+      line-height: 4.2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .showcase__box--header {
+          line-height: 3.5rem;
+          font-size: 2.5rem; } }
+    .showcase__box--text {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      font-weight: 400; }
+    .showcase__box--btn {
+      align-self: flex-start;
+      height: 4rem;
+      padding: 1rem 4rem; }

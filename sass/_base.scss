@@ -2,6 +2,12 @@ $color-first: #6b0419;
 $color-grey: #383838;
 $color-nav: #063140;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap');
 
 *,
@@ -26,6 +32,16 @@ body {
   // grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: 8rem;
+  grid-template-rows: 8rem 50.8rem;
   grid-gap: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #6a0a1e;
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 2px;
 }

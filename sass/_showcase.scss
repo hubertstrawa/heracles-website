@@ -1,0 +1,51 @@
+.showcase {
+  grid-column: 1 / -1;
+  display: grid;
+  /* prettier-ignore */
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
+  grid-gap: 1.2rem;
+
+  &__box {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-nav;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 60%;
+      height: 18.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 78%;
+        margin: 0 auto;
+        height: 28rem;
+      }
+    }
+
+    &--header {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+
+      @media only screen and (max-width: $bp-small) {
+        line-height: 3.5rem;
+        font-size: 2.5rem;
+      }
+    }
+
+    &--text {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+    }
+
+    &--btn {
+      align-self: flex-start;
+      height: 4rem;
+      padding: 1rem 4rem;
+    }
+  }
+}
