@@ -18,7 +18,7 @@ body {
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
   grid-column-gap: 1.2rem;
-  grid-template-rows: calc(50.8rem + 8rem) 40rem 40rem min-content min-content min-content; }
+  grid-template-rows: calc(50.8rem + 8rem) 40rem 40rem min-content min-content min-content 7rem; }
 
 .mb-small {
   margin-bottom: 2.3rem; }
@@ -350,8 +350,7 @@ body {
         @media only screen and (max-width: 37.5em) {
           .contact__box > div .contact__form > div:first-child {
             flex-direction: column;
-            width: 60%;
-            border: 2px solid red; } }
+            width: 60%; } }
         .contact__box > div .contact__form > div:first-child > :first-child {
           margin-right: auto; }
       .contact__box > div .contact__form--input {
@@ -402,3 +401,60 @@ body {
             margin: 3rem 0 0 -19rem; } }
       .contact__box > div .contact__form label {
         display: none; }
+
+.footer {
+  background-color: #063140;
+  grid-column: full-start / full-end;
+  height: 7rem;
+  display: grid;
+  /* prettier-ignore */
+  grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
+  grid-gap: 1.2rem; }
+  .footer > div {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    align-content: center; }
+    .footer > div > nav {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      color: #6b0419; }
+      @media only screen and (max-width: 660px) {
+        .footer > div > nav {
+          display: none; } }
+      .footer > div > nav > ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.1rem;
+        text-align: center; }
+        .footer > div > nav > ul > li {
+          display: flex;
+          margin-left: 3.5rem; }
+          .footer > div > nav > ul > li > a {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgba(248, 249, 249, 0.5);
+            position: relative;
+            padding: 0.2rem 0.4rem; }
+            .footer > div > nav > ul > li > a:hover {
+              color: #fff; }
+            .footer > div > nav > ul > li > a::before {
+              content: '';
+              display: block;
+              height: 2px;
+              background: #fff;
+              position: absolute;
+              top: 3rem;
+              left: 0;
+              right: 0;
+              transform: scale(0, 1);
+              transition: transform ease-in-out 250ms; }
+            .footer > div > nav > ul > li > a:hover::before {
+              transform: scale(1, 1); }

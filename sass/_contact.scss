@@ -29,7 +29,6 @@
         margin-top: 2rem;
         color: #8ea2a9;
         display: flex;
-        // border: 2px solid green;
         flex-direction: column;
         margin: 4rem auto 8rem auto;
         width: 50rem;
@@ -37,12 +36,10 @@
         & > div:first-child {
           justify-content: center;
           display: flex;
-          //   border: 2px solid brown;
 
           @media only screen and (max-width: $bp-small) {
             flex-direction: column;
             width: 60%;
-            border: 2px solid red;
           }
 
           & > :first-child {
