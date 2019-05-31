@@ -18,7 +18,7 @@ body {
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
   grid-column-gap: 1.2rem;
-  grid-template-rows: calc(50.8rem + 8rem) 40rem 40rem min-content 150rem; }
+  grid-template-rows: calc(50.8rem + 8rem) 40rem 40rem min-content min-content min-content; }
 
 .mb-small {
   margin-bottom: 2.3rem; }
@@ -28,6 +28,9 @@ body {
 
 .mb-large {
   margin-bottom: 4.5rem; }
+
+.mb-xxl {
+  margin-bottom: 12rem; }
 
 .btn {
   display: inline-block;
@@ -304,8 +307,7 @@ body {
         margin-top: auto;
         height: 14rem;
         justify-content: space-between;
-        align-self: flex-start;
-        border: 2px solid green; }
+        align-self: flex-start; }
         .about__container--top > div:nth-child(2) > div > a:hover {
           transform: scale(1.1);
           transition: transform 150ms ease-in; }
@@ -315,3 +317,88 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 150%; }
+
+.contact {
+  grid-column: full-start / full-end;
+  background-color: #f8f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__box {
+    width: 55%;
+    color: #063140;
+    text-align: center;
+    margin-top: 9rem; }
+    .contact__box--header {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+      margin-bottom: 1.5rem; }
+    .contact__box--text {
+      font-size: 2rem;
+      line-height: 2.6rem; }
+    .contact__box > div .contact__form {
+      margin-top: 2rem;
+      color: #8ea2a9;
+      display: flex;
+      flex-direction: column;
+      margin: 4rem auto 8rem auto;
+      width: 50rem; }
+      .contact__box > div .contact__form > div:first-child {
+        justify-content: center;
+        display: flex; }
+        @media only screen and (max-width: 37.5em) {
+          .contact__box > div .contact__form > div:first-child {
+            flex-direction: column;
+            width: 60%;
+            border: 2px solid red; } }
+        .contact__box > div .contact__form > div:first-child > :first-child {
+          margin-right: auto; }
+      .contact__box > div .contact__form--input {
+        padding: 1.3rem 1.8rem;
+        width: 24rem;
+        background: #ffffff;
+        border: 1px solid rgba(30, 69, 83, 0.5);
+        border-radius: 2px;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        transition: all 0.3s; }
+        @media only screen and (max-width: 37.5em) {
+          .contact__box > div .contact__form--input {
+            width: 100%; }
+            .contact__box > div .contact__form--input:first-child {
+              margin-bottom: 1.5rem; } }
+        .contact__box > div .contact__form--input:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          border-bottom: 3px solid #55c57a; }
+        .contact__box > div .contact__form--input:focus:invalid {
+          border-bottom: 3px solid #fc4f35; }
+      .contact__box > div .contact__form--message {
+        resize: none;
+        background: #ffffff;
+        border: 1px solid rgba(30, 69, 83, 0.5);
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        padding: 1.3rem 1.8rem;
+        margin-top: 1.5rem; }
+        @media only screen and (max-width: 37.5em) {
+          .contact__box > div .contact__form--message {
+            width: 30rem; } }
+        .contact__box > div .contact__form--message:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          border-bottom: 3px solid #55c57a; }
+        .contact__box > div .contact__form--message:focus:invalid {
+          border-bottom: 3px solid #fc4f35; }
+      .contact__box > div .contact__form--btn {
+        margin-top: 2rem;
+        align-self: center;
+        cursor: pointer; }
+        @media only screen and (max-width: 37.5em) {
+          .contact__box > div .contact__form--btn {
+            margin: 3rem 0 0 -19rem; } }
+      .contact__box > div .contact__form label {
+        display: none; }
