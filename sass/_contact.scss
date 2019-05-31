@@ -3,7 +3,6 @@
   background-color: $color-bg;
   display: flex;
   justify-content: center;
-  //   align-content: center;
   align-items: center;
 
   &__box {
@@ -30,7 +29,7 @@
         color: #8ea2a9;
         display: flex;
         flex-direction: column;
-        margin: 4rem auto 8rem auto;
+        margin: 4rem auto 12rem auto;
         width: 50rem;
 
         & > div:first-child {
@@ -105,6 +104,9 @@
         &--btn {
           margin-top: 2rem;
           align-self: center;
+          border: none;
+          height: 4rem;
+          padding: 1rem 3rem;
           cursor: pointer;
 
           @media only screen and (max-width: $bp-small) {

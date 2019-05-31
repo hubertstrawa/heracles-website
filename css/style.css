@@ -342,7 +342,7 @@ body {
       color: #8ea2a9;
       display: flex;
       flex-direction: column;
-      margin: 4rem auto 8rem auto;
+      margin: 4rem auto 12rem auto;
       width: 50rem; }
       .contact__box > div .contact__form > div:first-child {
         justify-content: center;
@@ -395,6 +395,9 @@ body {
       .contact__box > div .contact__form--btn {
         margin-top: 2rem;
         align-self: center;
+        border: none;
+        height: 4rem;
+        padding: 1rem 3rem;
         cursor: pointer; }
         @media only screen and (max-width: 37.5em) {
           .contact__box > div .contact__form--btn {
