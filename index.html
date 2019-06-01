@@ -93,16 +93,33 @@
             </p>
           </div>
           <div class="clients__items">
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg.png" alt="" /></div>
+            <div>
+              <img
+                src="img/clients/img-1.svg"
+                alt=""
+                class="clients__items--img"
+              />
+            </div>
+            <div><img src="img/clients/img-2.svg" alt="" /></div>
+            <div><img src="img/clients/img-3.svg" alt="" /></div>
+            <div><img src="img/clients/img-4.svg" alt="" /></div>
+            <div><img src="img/clients/img-5.svg" alt="" /></div>
+            <div><img src="img/clients/img-6.svg" alt="" /></div>
+            <div><img src="img/clients/img-7.svg" alt="" /></div>
+            <div><img src="img/clients/img-8.svg" alt="" /></div>
+            <div><img src="img/clients/img-9.svg" alt="" /></div>
+            <div><img src="img/clients/img-10.svg" alt="" /></div>
+            <div><img src="img/clients/img-11.svg" alt="" /></div>
+            <div><img src="img/clients/img-12.svg" alt="" /></div>
+            <div><img src="img/clients/img-13.svg" alt="" /></div>
+            <div><img src="img/clients/img-14.svg" alt="" /></div>
+            <div><img src="img/clients/img-15.svg" alt="" /></div>
+            <div><img src="img/clients/img-16.svg" alt="" /></div>
+            <div><img src="img/clients/img-17.svg" alt="" /></div>
+            <div><img src="img/clients/img-18.svg" alt="" /></div>
+            <div><img src="img/clients/img-19.svg" alt="" /></div>
+            <div><img src="img/clients/img-20.svg" alt="" /></div>
+            <div><img src="img/clients/img-21.svg" alt="" /></div>
           </div>
         </div>
       </section>
@@ -181,14 +198,16 @@
       </section>
       <section class="contact" id="contact">
         <div class="contact__box">
-          <h2 class="contact__box--header">Contact</h2>
-          <p class="contact__box--text">
-            Get in touch with us at xxx@heracles.com or use the contact form
-            below
-          </p>
-          <div>
+          <div class="contact__top">
+            <h2 class="contact__top--header">Contact</h2>
+            <p class="contact__top--text">
+              Get in touch with us at xxx@heracles.com or use the contact form
+              below
+            </p>
+          </div>
+          <div class="contact__bottom">
             <form action="#" class="contact__form">
-              <div>
+              <div class="contact__form--top">
                 <input
                   id="name"
                   type="text"
@@ -196,7 +215,7 @@
                   placeholder="Your name"
                   required
                 />
-                <label for="name" class="contact__form--label">Your name</label>
+                <label for="name" class="contact__form--label"></label>
 
                 <input
                   id="email"
@@ -205,35 +224,54 @@
                   placeholder="Your email"
                   required
                 />
-                <label for="email" class="contact__form--label"
-                  >Your email</label
-                >
+                <label for="email" class="contact__form--label"></label>
               </div>
-              <textarea
-                id="message"
-                class="contact__form--message"
-                placeholder="Message"
-                cols="30"
-                rows="5"
-                required
-              ></textarea>
+              <div class="contact__form--bottom">
+                <textarea
+                  id="message"
+                  class="contact__form--message"
+                  placeholder="Message"
+                  cols="30"
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message" class="contact__form--label"></label>
+
+                <button class="btn contact__form--btn">Send message</button>
+              </div>
+            </form>
+          </div>
+          <!-- 
+          <div>
+            <form action="#" class="contact__form">
+              <div>
+                <input id="name" type="text" class="contact__form--input" placeholder="Your name" required/>
+                <label for="name" class="contact__form--label">Your name</label>
+
+                <input id="email" type="email" class="contact__form--input" placeholder="Your email" required/>
+                <label for="email" class="contact__form--label">Your email</label>
+              </div>
+              <textarea id="message" class="contact__form--message" placeholder="Message" cols="30" rows="5" required></textarea>
               <label for="message" class="contact__form--label">Message</label>
 
               <button class="btn contact__form--btn">Send message</button>
             </form>
           </div>
+        </div> -->
         </div>
       </section>
       <footer class="footer">
         <div>
-          <img class="footer__logo" src="img/footer-logo.svg" alt="Hercules" />
+          <div>
+          <a href="#top"><img class="footer__logo" src="img/footer-logo.svg" alt="Hercules" /></a>
+        </div>
           <nav class="footer__nav">
             <ul>
-              <li><a href="#">Consulting</a></li>
-              <li><a href="#">Programmatic Infrastrucutre</a></li>
-              <li><a href="#">Clients</a></li>
-              <li><a href="#">About me</a></li>
-              <li><a href="#">Contact</a></li>
+                <li><a href="#consulting">Consulting</a></li>
+                <li><a href="#infrastructure">Programmatic Infrastrucutre</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -246,9 +284,9 @@
         speed: 850
       });
 
-      var scroll = new SmoothScroll('a[href*="#consulting"]', {
+      var scroll = new SmoothScroll('a[href*="#contact"]', {
         speed: 850,
-        offset: 65
+        offset: -30
       });
     </script>
   </body>

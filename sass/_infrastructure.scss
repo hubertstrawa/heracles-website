@@ -12,13 +12,18 @@
     width: 65%;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 10rem auto;
     color: $color-nav;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+    }
 
     &--header {
       font-size: 3.2rem;
       margin-bottom: 1.5rem;
       font-weight: 700;
+      margin-bottom: 3rem;
     }
 
     &--text {

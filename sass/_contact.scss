@@ -3,131 +3,105 @@
   background-color: $color-bg;
   display: flex;
   justify-content: center;
-  align-items: center;
+  color: $color-nav;
 
   &__box {
-    width: 55%;
-    color: $color-nav;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
     text-align: center;
-    margin-top: 9rem;
+    width: 90%;
+    margin: 0 auto;
 
     &--header {
       font-weight: 700;
       font-size: 3.2rem;
       line-height: 4.2rem;
-      margin-bottom: 1.5rem;
+      margin-top: 9rem;
     }
 
     &--text {
       font-size: 2rem;
       line-height: 2.6rem;
+      margin-top: 2rem;
     }
+  }
 
-    & > div {
-      .contact__form {
-        margin-top: 2rem;
-        color: #8ea2a9;
+  &__bottom {
+    margin-top: 3.5rem;
+
+    .contact__form {
+      &--top {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      &--bottom {
         display: flex;
         flex-direction: column;
-        margin: 4rem auto 12rem auto;
-        width: 50rem;
+        align-items: center;
+      }
+
+      &--input {
+        padding: 1.3rem 1.8rem;
+        width: 24rem;
+        background: #ffffff;
+        border: 1px solid rgba(30, 69, 83, 0.5);
+        border-radius: 2px;
+        margin: 0 0 1.5rem 0;
+        font-size: 1.6rem;
+  
+        &:first-child {
+          margin-right: 1.5rem;
+         }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+          border-bottom: 3px solid #55c57a;
+        }
+
+        &:focus:invalid {
+          border-bottom: 3px solid #fc4f35;
+        }
 
         @media only screen and (max-width: $bp-small) {
-          width: 100%;
+          width: 17rem;
+        }
+      }
+
+      &--message {
+        resize: none;
+        background: #ffffff;
+        border: 1px solid rgba(30, 69, 83, 0.5);
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        padding: 1.3rem 1.8rem;
+        width: 49.5rem;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+          border-bottom: 3px solid #55c57a;
         }
 
-        & > div:first-child {
-          justify-content: center;
-          display: flex;
-
-          @media only screen and (max-width: $bp-small) {
-            flex-direction: column;
-            width: 60%;
-          }
-
-          & > :first-child {
-            margin-right: auto;
-          }
+        &:focus:invalid {
+          border-bottom: 3px solid #fc4f35;
         }
 
-        &--input {
-          //   padding: 1.7rem 5.3rem;
-          padding: 1.3rem 1.8rem;
-          width: 24rem;
-          background: #ffffff;
-          border: 1px solid rgba(30, 69, 83, 0.5);
-          border-radius: 2px;
-          //   margin: 0 1rem 1rem 0;
-          font-size: 1.6rem;
-          line-height: 2.1rem;
-          transition: all 0.3s;
-
-          @media only screen and (max-width: $bp-small) {
-            width: 100%;
-            &:first-child {
-              margin-bottom: 1.5rem;
-            }
-          }
-
-          &:focus {
-            outline: none;
-            box-shadow: 0 1rem 2rem rgba(#000, 0.1);
-            border-bottom: 3px solid #55c57a;
-          }
-
-          &:focus:invalid {
-            border-bottom: 3px solid #fc4f35;
-          }
+        @media only screen and (max-width: $bp-small) {
+          width: 35.5rem;
         }
-        &--message {
-          resize: none;
-          background: #ffffff;
-          border: 1px solid rgba(30, 69, 83, 0.5);
-          border-radius: 2px;
-          font-family: inherit;
-          font-size: 1.6rem;
-          line-height: 2.1rem;
-          padding: 1.3rem 1.8rem;
-          margin-top: 1.5rem;
+      }
 
-          @media only screen and (max-width: $bp-small) {
-            width: 25rem;
-          }
-
-          &:focus {
-            outline: none;
-            box-shadow: 0 1rem 2rem rgba(#000, 0.1);
-            border-bottom: 3px solid #55c57a;
-          }
-
-          &:focus:invalid {
-            border-bottom: 3px solid #fc4f35;
-          }
-        }
-
-        &--btn {
-          margin-top: 2rem;
-          align-self: center;
-          border: none;
-          height: 4rem;
-          padding: 1rem 3rem;
-          cursor: pointer;
-
-          @media only screen and (max-width: $bp-small) {
-            margin: 3rem 0 0 -19rem;
-          }
-        }
-
-        label {
-          display: none;
-        }
-
-        // & > div:last-child {
-        //   display: flex;
-        //   flex-direction: column;
-        //   width: 90%;
-        //   align-items: center;
-        // }
+      &--btn {
+        margin: 4rem 0 8rem 0;
+        cursor: pointer;
       }
     }
   }

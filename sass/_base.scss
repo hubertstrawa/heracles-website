@@ -41,7 +41,7 @@ body {
   /* prettier-ignore */
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
   grid-column-gap: 1.2rem;
-  grid-template-rows: calc(50.8rem + 8rem) 40rem 40rem min-content min-content min-content 7rem;
+  grid-template-rows: calc(50.8rem + 8rem) min-content min-content min-content min-content min-content 7rem;
 }
 
 // UTILITIES
