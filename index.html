@@ -14,13 +14,32 @@
         <img class="header__logo" src="img/logo.svg" alt="Hercules" />
         <nav class="header__nav">
           <ul>
-            <li><a href="#">Consulting</a></li>
-            <li><a href="#">Programmatic Infrastrucutre</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#consulting">Consulting</a></li>
+            <li><a href="#infrastructure">Programmatic Infrastrucutre</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="header__mobile">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="#consulting">Consulting</a></li>
+                  <li>
+                    <a href="#infrastructure">Programmatic Infrastrucutre</a>
+                  </li>
+                  <li><a href="#clients">Clients</a></li>
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -32,15 +51,14 @@
               Heracles, a Mobile Strategy Consultancy
             </h1>
             <p class="showcase__box--text">
-              Heracles is a strategy consultancy for companies operating in
-              the<br />
+              Heracles is a strategy consultancy for companies operating in the
               consumer app space.
             </p>
-            <a href="#" class="showcase__box--btn btn">Learn more</a>
+            <a href="#consulting" class="showcase__box--btn btn">Learn more</a>
           </div>
         </div>
       </section>
-      <section class="consulting">
+      <section class="consulting" id="consulting">
         <div class="consulting__box">
           <h2 class="consulting__box--header">Consulting</h2>
           <p class="consulting__box--text">
@@ -52,7 +70,7 @@
           </p>
         </div>
       </section>
-      <section class="infrastructure">
+      <section class="infrastructure" id="infrastructure">
         <div class="infrastructure__box">
           <h2 class="infrastructure__box--header">
             Programmatic Infrastructure
@@ -66,7 +84,7 @@
           </p>
         </div>
       </section>
-      <section class="clients">
+      <section class="clients" id="clients">
         <div class="clients__wrapper">
           <div class="clients__box">
             <h2 class="clients__box--header">Clients</h2>
@@ -76,26 +94,26 @@
           </div>
           <div class="clients__items">
             <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg2.png" alt="" /></div>
-            <div><img src="img/imgg3.png" alt="" /></div>
             <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg2.png" alt="" /></div>
             <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg2.png" alt="" /></div>
-            <div><img src="img/imgg3.png" alt="" /></div>
             <div><img src="img/imgg.png" alt="" /></div>
-            <div><img src="img/imgg2.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
+            <div><img src="img/imgg.png" alt="" /></div>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__wrapper">
           <h2 class="about__wrapper--header">About me</h2>
           <p class="about__wrapper--text">
             Few words about me & my background.
           </p>
         </div>
-        <div class="about__container">
+        <!-- <div class="about__container">
           <div class="about__container--top">
             <div>
               <img src="img/img-eric.png" alt="Eric's photo" />
@@ -159,9 +177,9 @@
               marketing, and general mobile marketing strategy.
             </p>
           </div>
-        </div>
+        </div> -->
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__box">
           <h2 class="contact__box--header">Contact</h2>
           <p class="contact__box--text">
@@ -172,26 +190,24 @@
             <form action="#" class="contact__form">
               <div>
                 <input
+                  id="name"
                   type="text"
                   class="contact__form--input"
                   placeholder="Your name"
-                  id="name"
                   required
                 />
-                <label for="name" class="contact__form--label">
-                  Your name
-                </label>
+                <label for="name" class="contact__form--label">Your name</label>
 
                 <input
+                  id="email"
                   type="email"
                   class="contact__form--input"
                   placeholder="Your email"
-                  id="email"
                   required
                 />
-                <label for="email" class="contact__form--label">
-                  Your email
-                </label>
+                <label for="email" class="contact__form--label"
+                  >Your email</label
+                >
               </div>
               <textarea
                 id="message"
@@ -201,7 +217,7 @@
                 rows="5"
                 required
               ></textarea>
-              <label for="message">Message</label>
+              <label for="message" class="contact__form--label">Message</label>
 
               <button class="btn contact__form--btn">Send message</button>
             </form>
@@ -222,37 +238,18 @@
           </nav>
         </div>
       </footer>
-
-      <!-- <section class="services">
-        <div class="services__wrapper">
-          <div class="services__box">
-            <h1 class="services__box--header">Services</h1>
-            <p class="services__box--text">List of services we are offering.</p>
-          </div>
-          <div class="services__items">
-            <div>
-              <img src="img/rectangle.svg" alt="" />
-              <h2>Service name</h2>
-              <p>Service name</p>
-            </div>
-            <div>
-              <img src="img/rectangle.svg" alt="" />
-              <h2>Service name</h2>
-              <p>Service name</p>
-            </div>
-            <div>
-              <img src="img/rectangle.svg" alt="" />
-              <h2>Service name</h2>
-              <p>Service name</p>
-            </div>
-            <div>
-              <img src="img/rectangle.svg" alt="" />
-              <h2>Service name</h2>
-              <p>Service name</p>
-            </div>
-          </div>
-        </div>
-      </section>  -->
     </main>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 850
+      });
+
+      var scroll = new SmoothScroll('a[href*="#consulting"]', {
+        speed: 850,
+        offset: 65
+      });
+    </script>
   </body>
 </html>
