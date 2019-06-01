@@ -264,7 +264,7 @@ body {
       margin-top: 7rem; }
       @media only screen and (max-width: 50em) {
         .showcase__box > div {
-          margin-top: 0rem;
+          margin-top: 2.5rem;
           width: 85%; } }
     .showcase__box--header {
       font-size: 3.6rem;
@@ -418,24 +418,53 @@ body {
       line-height: 2.6rem; }
   .about__container--top {
     display: flex; }
+    @media only screen and (max-width: 37.5em) {
+      .about__container--top {
+        flex-direction: column;
+        margin: 0 auto; } }
     .about__container--top > div:nth-child(1) {
       margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .about__container--top > div:nth-child(1) {
+          margin-right: 0;
+          align-self: center;
+          display: flex;
+          justify-content: center; } }
       .about__container--top > div:nth-child(1) > img {
         border-radius: 2px; }
+        @media only screen and (max-width: 37.5em) {
+          .about__container--top > div:nth-child(1) > img {
+            width: 100%; } }
     .about__container--top > div:nth-child(2) {
       display: flex;
       flex-direction: column; }
       .about__container--top > div:nth-child(2) > p {
+        order: 1;
         font-weight: 500;
         font-size: 2.4rem;
         line-height: 3.6rem; }
+        @media only screen and (max-width: 37.5em) {
+          .about__container--top > div:nth-child(2) > p {
+            order: 2;
+            width: 98%;
+            margin: 0 auto;
+            text-align: center; } }
       .about__container--top > div:nth-child(2) > div {
         display: flex;
         flex-direction: column;
         margin-top: auto;
         height: 14rem;
         justify-content: space-between;
-        align-self: flex-start; }
+        align-self: flex-start;
+        order: 2; }
+        @media only screen and (max-width: 37.5em) {
+          .about__container--top > div:nth-child(2) > div {
+            order: 1;
+            flex-direction: row;
+            width: 17rem;
+            align-self: center;
+            height: 5rem;
+            margin: 4rem 0 3rem 0; } }
         .about__container--top > div:nth-child(2) > div > a:hover {
           transform: scale(1.1);
           transition: transform 150ms ease-in; }
@@ -445,6 +474,12 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 150%; }
+    @media only screen and (max-width: 37.5em) {
+      .about__container--bottom > p {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 4rem; } }
 
 .contact {
   grid-column: full-start / full-end;
