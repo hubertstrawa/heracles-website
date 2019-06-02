@@ -31,7 +31,7 @@
       height: 100%;
       justify-content: flex-end;
       align-items: center;
-      color: $color-first;
+      color: $color-main;
 
       @media only screen and (max-width: 900px) {
         display: none;
@@ -59,14 +59,14 @@
             padding: 0.2rem 0.4rem;
 
             &:hover {
-              color: $color-first;
+              color: $color-main;
             }
 
             &::before {
               content: '';
               display: block;
               height: 2px;
-              background: $color-first;
+              background: $color-main;
               position: absolute;
               top: 3rem;
               left: 0;
@@ -183,7 +183,7 @@
   
       & > div {
           transform: scale(1);
-          transition-duration: 0.75s;
+          transition-duration: $menu-speed;
   
           & > div {
               opacity: .8;

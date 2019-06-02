@@ -29,7 +29,7 @@
       height: 100%;
       justify-content: flex-end;
       align-items: center;
-      color: $color-first;
+      color: $color-main;
 
       @media only screen and (max-width: $bp-medium) {
         display: none;
@@ -52,7 +52,7 @@
           & > a {
             text-decoration: none;
             cursor: pointer;
-            color: $color-nav-footer;
+            color: $color-text-footer;
             position: relative;
             padding: 0.2rem 0.4rem;
 

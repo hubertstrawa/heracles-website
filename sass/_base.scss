@@ -1,10 +1,15 @@
 // VARIABLES
-$color-first: #6b0419;
-$color-grey: #383838;
+$color-main: #6b0419;
 $color-bg: #f8f9f9;
 $color-nav: #063140;
-$color-nav-footer: rgba(248, 249, 249, 0.5);
-// $color-section-opacity: rgba(#063140, 0.03);
+$color-text-footer: rgba(248, 249, 249, 0.5);
+
+// MENU SPEED FOR MOBILE
+$menu-speed: 0.75s;
+
+
+// --- PLEASE DO NOT MAKE ANY CHANGES AFTER THIS LINE ---
+
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
