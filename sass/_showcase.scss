@@ -5,11 +5,12 @@
   grid-template-columns: [full-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 7.7rem) [col-end]) [center-end] 1fr [full-end];
   grid-gap: 1.2rem;
   background: url('../img/img-hero.png') no-repeat;
-  background-position: 103% -60%;
+  background-position: 115% -250%;
 
   @media only screen and (max-width: $bp-small) {
     background: url('../img/img-hero-mobile.png') no-repeat;
-    background-position: 100% 260%;
+    // background-position: 100% 260%;
+    background-position: 100% 150%;
   }
 
   &__box {
