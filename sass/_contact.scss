@@ -33,7 +33,6 @@
     margin-top: 3.5rem;
 
     .contact__form {
-      
       &--top {
         display: flex;
         justify-content: center;
@@ -54,10 +53,10 @@
         border-radius: 2px;
         margin: 0 0 1.5rem 0;
         font-size: 1.6rem;
-  
+
         &:first-child {
           margin-right: 1.5rem;
-         }
+        }
 
         &:focus {
           outline: none;
@@ -101,8 +100,11 @@
       }
 
       &--btn {
-        margin: 4rem 0 8rem 0;
+        margin: 4rem 0 9rem 0;
         cursor: pointer;
+        height: 4rem;
+        padding: 1rem 4rem;
+        border: none;
       }
     }
   }

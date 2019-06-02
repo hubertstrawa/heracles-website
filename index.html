@@ -206,10 +206,11 @@
             </p>
           </div>
           <div class="contact__bottom">
-            <form action="#" class="contact__form">
+            <form action="https://formspree.io/hubosek98@gmail.com" method="POST" class="contact__form">
               <div class="contact__form--top">
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   class="contact__form--input"
                   placeholder="Your name"
@@ -219,6 +220,7 @@
 
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   class="contact__form--input"
                   placeholder="Your email"
@@ -229,6 +231,7 @@
               <div class="contact__form--bottom">
                 <textarea
                   id="message"
+                  name="message"
                   class="contact__form--message"
                   placeholder="Message"
                   cols="30"
@@ -237,7 +240,7 @@
                 ></textarea>
                 <label for="message" class="contact__form--label"></label>
 
-                <button class="btn contact__form--btn">Send message</button>
+                <button type="submit" class="btn contact__form--btn">Send Test</button>
               </div>
             </form>
           </div>
